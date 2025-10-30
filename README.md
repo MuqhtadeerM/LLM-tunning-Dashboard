@@ -1,16 +1,85 @@
-# React + Vite
+# LLM Tuning Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive frontend dashboard for managing and visualizing LLM (Large Language Model) tuning jobs, built using **React**, **JavaScript**, **Tailwind CSS**, and **JSX**.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project provides an intuitive interface for configuring, monitoring, and visualizing LLM tuning experiments. The dashboard is designed for ease of use and scalability, making it suitable for research, prototyping, and production deployment.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Job Management:** Start, stop, and monitor the status of LLM tuning jobs.
+- **Live Visualization:** Real-time charts and metrics for model training and performance.
+- **Configuration UI:** Easily adjust hyperparameters and experiment settings.
+- **Responsive Design:** Optimized for desktop and mobile devices using Tailwind CSS.
+- **Component-Based:** Modular architecture with reusable React components.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** UI library for building interactive user interfaces.
+- **JavaScript:** Application logic and data handling.
+- **Tailwind CSS:** Utility-first CSS framework for rapid and customizable styling.
+- **JSX:** Syntax extension for describing component structure.
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** (v16 or above)
+- **npm** or **yarn**
+
+### Installation
+
+```bash
+git clone https://github.com/MuqhtadeerM/LLM-tunning-Dashboard.git
+cd LLM-tunning-Dashboard
+npm install
+```
+
+### Running the Project
+
+```bash
+npm start
+```
+
+The app will launch in your default browser at `http://localhost:3000`.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+  components/    # Reusable React components
+  pages/         # Dashboard pages/views
+  assets/        # Images and static files
+  styles/        # Custom Tailwind configurations
+  App.jsx        # Main App component
+  index.js       # Entry point
+```
+
+## Customization
+
+- **Tailwind:** Modify `tailwind.config.js` for custom colors, font sizes, and breakpoints.
+- **Components:** Extend or replace UI components in the `src/components` directory.
+- **API Integration:** Connect to your backend or model server by updating API calls in relevant components.
+
+## Contributing
+
+1. Fork the repository
+2. Create your branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to your branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+## License
+
+MIT
+
+---
+
+**Built with ❤️ by [MuqhtadeerM](https://github.com/MuqhtadeerM)**
